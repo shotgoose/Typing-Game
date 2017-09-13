@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <title>Typing Game</title>
+    </head>
+  <body>
+    <center>
+      <div id="mainmenu">
+    <h1>Typing Game</h2>
+    <h3>Type the words as fast as you can!</h3>
+    <button id="start">Play Game</button>
+      </div>
+
+      <div id="game">
+        <h1>Typing Game</h1>
+        <h2 id="worddisplay"></h2>
+        <form id="form">
+          <input id="playerInput" autocomplete="off"></input>
+        </form>
+        <h3 id="wordsleft">Words Left: 20</h3>
+        </div>
+
+        <div id="endscreen">
+          <h1>You did it!</h1>
+            <h2 id="timedisplay">Time Taken: </h2>
+            <h2 id="highscore">Best Score: </h2>
+            <button id="back">Back</button>
+        </div>
+
+
+
+    <script src="javascript.js"></script>
+
+    <style>
+
+    #playerInput {
+      width: 600px;
+      height: 50px;
+      font-size: 25px;
+    }
+
+    #endscreen {
+      display: none;
+    }
+
+    #game {
+      display: none;
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    button:active {
+      transform: translateY(5px);
+      transition-duration:0.05s;
+    }
+
+    button {
+      border: 1px solid gray;
+      background-color: : white;
+      color: black;
+      width: 100px;
+      height: 50px;
+      font-size: 20px;
+      transition-duration:0.05s;
+      margin-top: 20px;
+    }
+
+    body {
+      font-family: Arial;
+    }
+
+</style>
